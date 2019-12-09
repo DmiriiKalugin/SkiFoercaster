@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Лыжный Синоптик</string>
+    <string name="welcom_screen">Экран приветствия</string>
 </resources>
