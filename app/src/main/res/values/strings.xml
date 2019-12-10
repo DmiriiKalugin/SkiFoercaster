@@ -2,4 +2,11 @@
     <string name="app_name">Лыжный Синоптик</string>
     <string name="welcom_screen">Экран приветствия</string>
     <string name="next_activity">Старт!</string>
+    <string name="first_title">Выбирите нужные параметры</string>
+    <string name="air_temperature">t воздуха</string>
+    <string name="type_of_snow">Тип снега</string>
+    <string name="fresh">Свежий</string>
+    <string name="old">Старый</string>
+    <string name="crude">Сырой(до -7)</string>
+    <string name="artificial">Искусственный</string>
 </resources>
