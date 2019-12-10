@@ -4,5 +4,5 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ski"
-    tools:context=".Main2Activity" />
+    android:background="@mipmap/first_background"
+    tools:context=".First" />
