@@ -9,4 +9,5 @@
     <string name="old">Старый</string>
     <string name="crude">Сырой(до -7)</string>
     <string name="artificial">Искусственный</string>
+    <string name="title_activity_temperature_plus_ten_and_five">TemperaturePlusTenAndFive</string>
 </resources>

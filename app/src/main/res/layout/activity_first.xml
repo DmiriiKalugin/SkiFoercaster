@@ -11,7 +11,6 @@
         android:id="@+id/first_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
         android:autoText="false"
         android:background="@android:color/white"
         android:fontFamily="casual"
@@ -21,7 +20,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="100dp" />
 
     <EditText
         android:id="@+id/air_temperature"
@@ -46,7 +45,7 @@
         android:background="@color/colorPrimaryBlue"
         android:text="@string/old"
         android:textColor="@color/colorPrimaryWhite"
-        android:textSize="24sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
@@ -61,7 +60,7 @@
         android:background="@color/colorPrimaryBlue"
         android:text="@string/fresh"
         android:textColor="@color/colorPrimaryWhite"
-        android:textSize="24sp"
+        android:textSize="12sp"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,7 +76,7 @@
         android:background="@color/colorPrimaryBlue"
         android:text="@string/crude"
         android:textColor="@color/colorPrimaryWhite"
-        android:textSize="24sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
@@ -92,7 +91,7 @@
         android:background="@color/colorPrimaryBlue"
         android:text="@string/artificial"
         android:textColor="@color/colorPrimaryWhite"
-        android:textSize="24sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />

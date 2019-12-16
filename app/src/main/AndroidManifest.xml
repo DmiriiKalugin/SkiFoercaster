@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_ski_forecaster"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".First"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".TemperaturePlusTenAndFive"
+            android:label="@string/title_activity_temperature_plus_ten_and_five"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".First"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Splash"
             android:theme="@style/SplashTheme">
