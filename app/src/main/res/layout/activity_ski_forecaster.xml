@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/first_background"
-    tools:context=".First" >
+    tools:context=".ski_forecaster.SkiForecaster" >
 
     <TextView
         android:id="@+id/first_title"
@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteX="0dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_old"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -67,7 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_crude"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -79,10 +79,10 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_old" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_artificial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
@@ -94,7 +94,7 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_crude" />
 
     <TextView
         android:id="@+id/textView4"

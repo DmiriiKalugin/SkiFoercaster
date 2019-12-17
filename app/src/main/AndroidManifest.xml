@@ -9,11 +9,17 @@
         android:roundIcon="@mipmap/ic_ski_forecaster"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".temperature.plus5_10.Arcificial"></activity>
+        <activity android:name=".temperature.plus5_10.Crude" />
+        <activity android:name=".temperature.plus5_10.Old" />
         <activity
-            android:name=".First"
+            android:name=".temperature.plus5_10.Fresh"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".Splash"
+            android:name=".ski_forecaster.SkiForecaster"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".splash.Splash"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
