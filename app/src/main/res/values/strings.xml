@@ -10,22 +10,12 @@
     <string name="crude">Сырой(до -7)</string>
     <string name="artificial">Искусственный</string>
     <string name="title_activity_temperature_plus_ten_and_five">TemperaturePlusTenAndFive</string>
-
-
-    <string name="fresh_activity">
-                    t     +10+5
-                тип снега     свежий
-                влажность   55/100
-        1. VAUHTI HF wet (-1+10)
-        2. START HF 2 (0+10)
-        3. SWIX MARATHON DHF104 (0+20)
-
-                Порошки ускорители
-
-        1. OPTIWAX (+10-10)
-        2.SWIX FC10X (0+10)
-
-        Помните, что конечный результат зависит от правильного нанесения мази.
-
-    </string>
+    <string name="temperature">t</string>
+    <string name="colon">:</string>
+    <string name="humidity">Влажность</string>
+    <string name="fifty_five_hundred">55/100</string>
+    <string name="paraphins">\n 1. VAUHTI HF wet (-1+10)\n 2. START HF 2 (0+10) \n 3. SWIX MARATHON DHF104 (0+20) </string>
+    <string name="powders_accelerators">Порошки ускорители</string>
+    <string name="powders_accelerators_5_10">\n 1. OPTIWAX (+10-10) \n 2.SWIX FC10X (0+10)</string>
+    <string name="footnote">Помните, что конечный результат зависит от правильного нанесения мази.</string>
 </resources>
