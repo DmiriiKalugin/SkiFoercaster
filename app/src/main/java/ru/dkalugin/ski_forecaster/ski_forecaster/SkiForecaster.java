@@ -9,12 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import ru.dkalugin.ski_forecaster.R;
-import ru.dkalugin.ski_forecaster.temperature.plus5_10.Arcificial;
-import ru.dkalugin.ski_forecaster.temperature.plus5_10.Crude;
-import ru.dkalugin.ski_forecaster.temperature.plus5_10.Fresh;
-import ru.dkalugin.ski_forecaster.temperature.plus5_10.Old;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
+import ru.dkalugin.ski_forecaster.condition.Arcificial;
+import ru.dkalugin.ski_forecaster.condition.Crude;
+import ru.dkalugin.ski_forecaster.condition.Fresh;
+import ru.dkalugin.ski_forecaster.condition.Old;
 
 public class   SkiForecaster extends AppCompatActivity  implements View.OnClickListener{
 

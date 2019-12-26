@@ -1,4 +1,4 @@
-package ru.dkalugin.ski_forecaster.temperature.plus5_10;
+package ru.dkalugin.ski_forecaster.condition;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,24 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import ru.dkalugin.ski_forecaster.R;
-import ru.dkalugin.ski_forecaster.ski_forecaster.SkiForecaster;
 
-public class Fresh extends AppCompatActivity {
+public class Old extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fresh_pl_5_10);
+        setContentView(R.layout.activity_old);
 
         Intent intent = getIntent();
         String temperature = intent.getStringExtra("temperature");
 
-        TextView tex_temperature = (TextView) findViewById(R.id.text_t_pl_5_10);
-        tex_temperature.setText(temperature);
-
-
+        TextView tex_temperature = (TextView) findViewById(R.id.text_temperature_);
+        tex_temperature.setText("t " + temperature);
     }
 }

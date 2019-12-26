@@ -1,4 +1,4 @@
-package ru.dkalugin.ski_forecaster.temperature.plus5_10;
+package ru.dkalugin.ski_forecaster.condition;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,6 @@ public class Arcificial extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arcificial_pl_5_10);
+        setContentView(R.layout.activity_arcificial);
     }
 }

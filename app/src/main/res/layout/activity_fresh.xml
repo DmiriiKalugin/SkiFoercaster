@@ -5,17 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/back_fresh"
-    tools:context=".temperature.plus5_10.Fresh" >
+    tools:context=".condition.Fresh" >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#9C000000"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="-151dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/text_t_pl_5_10"
+            android:id="@+id/text_temperature_fresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="93dp"
@@ -30,7 +30,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/humidity_fresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -43,10 +43,10 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_type_show" />
+            app:layout_constraintTop_toBottomOf="@+id/text_type_show_fresh" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/humidity_2_fresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
@@ -56,7 +56,7 @@
             android:textColor="@color/colorPrimaryWhite"
             android:textSize="22sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toEndOf="@+id/humidity_fresh"
             app:layout_constraintTop_toBottomOf="@+id/text_type_fresh" />
 
         <TextView
@@ -71,11 +71,11 @@
             android:textColor="@color/colorPrimaryWhite"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/text_type_show"
-            app:layout_constraintTop_toBottomOf="@+id/text_t_pl_5_10" />
+            app:layout_constraintStart_toEndOf="@+id/text_type_show_fresh"
+            app:layout_constraintTop_toBottomOf="@id/text_temperature_fresh" />
 
         <TextView
-            android:id="@+id/text_type_show"
+            android:id="@+id/text_type_show_fresh"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -87,7 +87,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_t_pl_5_10" />
+            app:layout_constraintTop_toBottomOf="@id/text_temperature_fresh" />
 
         <TextView
             android:id="@+id/paraphin_fresh"
@@ -103,11 +103,12 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            app:layout_constraintTop_toBottomOf="@+id/humidity_fresh" />
 
         <TextView
-            android:id="@+id/powders_accelerators"
+            android:id="@+id/powders_accelerators_fresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -123,7 +124,7 @@
             app:layout_constraintTop_toBottomOf="@+id/paraphin_fresh" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/powders_accelerators_2_fresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -138,10 +139,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/powders_accelerators" />
+            app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_fresh" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/footnote_fresh"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -154,7 +155,7 @@
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_2_fresh" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
