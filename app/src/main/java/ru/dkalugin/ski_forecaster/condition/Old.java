@@ -18,7 +18,7 @@ public class Old extends AppCompatActivity {
         Intent intent = getIntent();
         String temperature = intent.getStringExtra("temperature");
 
-        TextView tex_temperature = (TextView) findViewById(R.id.text_temperature_);
+        TextView tex_temperature = (TextView) findViewById(R.id.text_temperature_old);
         tex_temperature.setText("t " + temperature);
     }
 }

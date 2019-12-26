@@ -18,7 +18,7 @@ public class Fresh extends AppCompatActivity {
         Intent intent = getIntent();
         String temperature = intent.getStringExtra("temperature");
 
-        TextView tex_temperature = (TextView) findViewById(R.id.text_temperature_);
+        TextView tex_temperature = (TextView) findViewById(R.id.text_temperature_fresh);
         tex_temperature.setText("t " + temperature);
 
 

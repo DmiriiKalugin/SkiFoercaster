@@ -8,14 +8,21 @@
     <string name="fresh">Свежий</string>
     <string name="old">Старый</string>
     <string name="crude">Сырой(до -7)</string>
+    <string name="cruds">Сырой</string>
     <string name="artificial">Искусственный</string>
     <string name="title_activity_temperature_plus_ten_and_five">TemperaturePlusTenAndFive</string>
     <string name="temperature">t</string>
     <string name="colon">:</string>
     <string name="humidity">Влажность</string>
     <string name="fifty_five_hundred">55/100</string>
-    <string name="paraphins">\n 1. VAUHTI HF wet (-1+10)\n 2. START HF 2 (0+10) \n 3. SWIX MARATHON DHF104 (0+20) </string>
+    <string name="paraphins_fresh_5_10">\n 1. VAUHTI HF wet (-1+10)\n 2. START HF 2 (0+10) \n 3. SWIX MARATHON DHF104 (0+20) </string>
+    <string name="paraphins_crude_5_10">\n 1. SWIX HF10 (0+10)\n 2.SWIX  MARATHON DHF104 (0+20)  \n 3. START HF 2 (0+10) </string>
+    <string name="paraphins_old_5_10">\n 1. SWIX  MARATHON DHF104BW-4 (0+20)\n 2. START HF 2 (0+10) \n 3. Ski Go HF (+20-1) </string>
+    <string name="paraphins_arcificial_5_10">\n 1. Ski Go HF (+20-1) \n 2. SWIX  MARATHON DHF104BW-4 (0+20) \n 3. START HF 2 (0+10) </string>
+    <string name="powders_accelerators_5_10_fresh">\n 1. OPTIWAX (+10-10) \n 2.SWIX FC10X (0+10)</string>
+    <string name="powders_accelerators_5_10_old">\n 1. OPTIWAX (+10-10) \n 2.START BM1(+10-2) \n 3. Ski Go C22(+22-2) ускоритель \n 4. SWIX FC8A(+10-2) ROCKET эмульсия</string>
+    <string name="powders_accelerators_5_10_crude">\n 1. SWIX  FC10X(0+15)  порошок \n 2. VAUHTI Silverfox wet(0+15) спресовка</string>
+    <string name="powders_accelerators_5_10_arcificial">\n 1. Ski Go C22(+22-2) ускоритель \n 2. START SFR99(+9-9) ускоритель \n 3. SWIX FC8A(+10-2)ROCKET эмульсия </string>
     <string name="powders_accelerators">Порошки ускорители</string>
-    <string name="powders_accelerators_5_10">\n 1. OPTIWAX (+10-10) \n 2.SWIX FC10X (0+10)</string>
     <string name="footnote">Помните, что конечный результат зависит от правильного нанесения мази.</string>
 </resources>
