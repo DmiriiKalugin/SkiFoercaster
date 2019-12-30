@@ -16,6 +16,7 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
