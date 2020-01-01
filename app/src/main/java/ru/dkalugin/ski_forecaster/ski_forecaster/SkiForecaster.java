@@ -2,6 +2,7 @@ package ru.dkalugin.ski_forecaster.ski_forecaster;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -16,10 +17,13 @@ import ru.dkalugin.ski_forecaster.condition.Old;
 
 public class   SkiForecaster extends AppCompatActivity  implements View.OnClickListener{
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ski_forecaster);
+
 
         Button btn_fresh = (Button) findViewById(R.id.btn_fresh);
         Button btn_old = (Button) findViewById(R.id.btn_old);
@@ -36,8 +40,29 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
 
     @Override
     public void onClick(View v) {
+
         EditText air_temperature = (EditText) findViewById(R.id.air_temperature);
         String temperature = air_temperature.getText().toString();
+
+        final ProgressDialog progressDialog = new ProgressDialog(SkiForecaster.this, R.style.MyTheme);
+        progressDialog.setProgressStyle(android.R.style.Widget_ProgressBar_Small);
+        progressDialog.show();
+//        After 2 Seconds i dismiss progress Dialog
+
+        new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                try {
+                    Thread.sleep(2000);
+                    if (progressDialog.isShowing())
+                        progressDialog.dismiss();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
+
 
         switch (v.getId()){
             case R.id.btn_fresh:
@@ -62,6 +87,7 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
                 break;
 
         }
+
 
     }
 
