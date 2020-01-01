@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/back_arcificial"
-    tools:context=".condition.Arcificial">
+    android:background="@mipmap/back_old_land"
+    tools:context=".condition.Old">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/text_temperature_arcificial"
+                android:id="@+id/text_temperature_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="93dp"
@@ -27,131 +27,131 @@
                 android:text="@string/temperature"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/text_type_show_arcificial"
+                android:id="@+id/text_type_show_old"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="5dp"
                 android:padding="10dp"
                 android:text="@string/type_of_snow"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_temperature_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/text_temperature_old" />
 
             <TextView
-                android:id="@+id/text_type_arcificial"
+                android:id="@+id/text_type_old"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="5dp"
                 android:padding="10dp"
-                android:text="@string/artificial"
+                android:text="@string/old"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@id/text_type_show_arcificial"
-                app:layout_constraintTop_toBottomOf="@id/text_temperature_arcificial" />
+                app:layout_constraintStart_toEndOf="@id/text_type_show_old"
+                app:layout_constraintTop_toBottomOf="@id/text_temperature_old" />
 
             <TextView
-                android:id="@+id/humidity_arcificial"
+                android:id="@+id/humidity_old"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
                 android:padding="10dp"
                 android:text="@string/humidity"
                 android:textAlignment="viewStart"
                 android:textAllCaps="true"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_type_show_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/text_type_show_old" />
 
             <TextView
-                android:id="@+id/humidity_2_arcificial"
+                android:id="@+id/humidity_2_old"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="6dp"
                 android:padding="10dp"
                 android:text="@string/fifty_five_hundred"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/humidity_arcificial"
-                app:layout_constraintTop_toBottomOf="@+id/text_type_arcificial" />
+                app:layout_constraintStart_toEndOf="@+id/humidity_old"
+                app:layout_constraintTop_toBottomOf="@+id/text_type_old" />
 
             <TextView
-                android:id="@+id/paraphin_arcificial"
+                android:id="@+id/paraphin_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="16dp"
                 android:padding="5dp"
-                android:text="@string/paraphins_arcificial_5_10"
+                android:text="@string/paraphins_old_5_10"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/humidity_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/humidity_old" />
 
             <TextView
-                android:id="@+id/powders_accelerators_arcificial"
+                android:id="@+id/powders_accelerators_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="93dp"
                 android:text="@string/powders_accelerators"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="24sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/paraphin_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/paraphin_old" />
 
             <TextView
-                android:id="@+id/powders_accelerators_2_arcificial"
+                android:id="@+id/powders_accelerators_2_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginEnd="16dp"
                 android:padding="5dp"
-                android:text="@string/powders_accelerators_5_10_arcificial"
+                android:text="@string/powders_accelerators_5_10_old"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorPrimaryWhite"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_old" />
 
             <TextView
-                android:id="@+id/footnote_arcificial"
+                android:id="@+id/footnote_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="93dp"
                 android:padding="10dp"
                 android:text="@string/footnote"
                 android:textAlignment="textStart"
@@ -159,10 +159,8 @@
                 android:textSize="14sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_2_arcificial" />
+                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_2_old" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

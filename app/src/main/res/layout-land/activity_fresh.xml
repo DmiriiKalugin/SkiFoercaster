@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back_fresh"
+    tools:context=".condition.Fresh" >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9E000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-95dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-151dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:id="@+id/humidity_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
+                android:padding="10dp"
+                android:text="@string/humidity"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_type_show_fresh" />
+
+            <TextView
+                android:id="@+id/humidity_2_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="6dp"
+                android:padding="10dp"
+                android:text="@string/fifty_five_hundred"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/humidity_fresh"
+                app:layout_constraintTop_toBottomOf="@+id/text_type_fresh" />
+
+            <TextView
+                android:id="@+id/paraphin_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="93dp"
+                android:padding="5dp"
+                android:text="@string/paraphins_fresh_5_10"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/humidity_fresh" />
+
+            <TextView
+                android:id="@+id/powders_accelerators_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="93dp"
+                android:text="@string/powders_accelerators"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paraphin_fresh" />
+
+            <TextView
+                android:id="@+id/text_type_show_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/type_of_snow"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_temperature_fresh" />
+
+            <TextView
+                android:id="@+id/footnote_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="93dp"
+                android:padding="10dp"
+                android:text="@string/footnote"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_2_fresh" />
+
+            <TextView
+                android:id="@+id/text_type_fresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="@string/fresh"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/text_type_show_fresh"
+                app:layout_constraintTop_toBottomOf="@id/text_temperature_fresh" />
+
+            <TextView
+                android:id="@+id/powders_accelerators_2_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="93dp"
+                android:padding="5dp"
+                android:text="@string/powders_accelerators_5_10_fresh"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/powders_accelerators_fresh" />
+
+            <TextView
+                android:id="@+id/text_temperature_fresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginEnd="93dp"
+                android:text="@string/temperature"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
