@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/back_fresh"
-    tools:context=".condition.Crude" >
+    android:background="@mipmap/back_crude"
+    tools:context=".condition.Crude">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#9E000000"
+        android:background="#9C000000"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-95dp">
 

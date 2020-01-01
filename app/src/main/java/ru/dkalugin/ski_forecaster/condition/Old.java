@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.concurrent.TimeUnit;
+
 import ru.dkalugin.ski_forecaster.R;
 
 public class Old extends AppCompatActivity {
@@ -14,6 +16,12 @@ public class Old extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_old);
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         Intent intent = getIntent();
         String temperature = intent.getStringExtra("temperature");
