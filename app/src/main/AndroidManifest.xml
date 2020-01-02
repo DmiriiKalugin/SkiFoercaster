@@ -23,7 +23,8 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".ski_forecaster.SkiForecaster"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".splash.Splash"
             android:theme="@style/SplashTheme">

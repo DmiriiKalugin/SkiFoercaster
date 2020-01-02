@@ -15,14 +15,581 @@
     <string name="colon">:</string>
     <string name="humidity">Влажность</string>
     <string name="fifty_five_hundred">55/100</string>
-    <string name="paraphins_fresh_5_10"> 1. VAUHTI HF wet (-1+10)\n 2. START HF 2 (0+10) \n 3. SWIX MARATHON DHF104 (0+20) </string>
-    <string name="paraphins_crude_5_10"> 1. SWIX HF10 (0+10)\n 2.SWIX  MARATHON DHF104 (0+20)  \n 3. START HF 2 (0+10) </string>
-    <string name="paraphins_old_5_10"> 1. SWIX  MARATHON DHF104BW-4 (0+20)\n 2. START HF 2 (0+10) \n 3. Ski Go HF (+20-1) </string>
-    <string name="paraphins_arcificial_5_10"> 1. Ski Go HF (+20-1) \n 2. SWIX  MARATHON DHF104BW-4 (0+20) \n 3. START HF 2 (0+10) </string>
-    <string name="powders_accelerators_5_10_fresh"> 1. OPTIWAX (+10-10) \n 2.SWIX FC10X (0+10)</string>
-    <string name="powders_accelerators_5_10_old"> 1. OPTIWAX (+10-10) \n 2.START BM1(+10-2) \n 3. Ski Go C22(+22-2) ускоритель \n 4. SWIX FC8A(+10-2) ROCKET эмульсия</string>
-    <string name="powders_accelerators_5_10_crude"> 1. SWIX  FC10X(0+15)  порошок \n 2. VAUHTI Silverfox wet(0+15) спресовка</string>
-    <string name="powders_accelerators_5_10_arcificial"> 1. Ski Go C22(+22-2) ускоритель \n 2. START SFR99(+9-9) ускоритель \n 3. SWIX FC8A(+10-2)ROCKET эмульсия </string>
-    <string name="powders_accelerators">Порошки ускорители</string>
     <string name="footnote">Помните, что конечный результат зависит от правильного нанесения мази.</string>
+    <string name="powders_accelerators">Порошки ускорители</string>
+    <string name="powders_accelerators_default">Здесь отображаются  Порошки ускорители</string>
+    <string name="paraphins">Парафины</string>
+    <string name="paraphins_default">Здесь отображаются парафины</string>
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins +6 +10-->
+    <string name="paraphins_fresh_plus_6_10">
+        1. VAUHTI HF wet (-1+10)\n 2. START HF 2 (0+10) \n 3. SWIX MARATHON DHF104 (0+20)
+    </string>
+    <string name="paraphins_crude_plus_6_10">
+        1. SWIX HF10 (0+10)\n 2.SWIX  MARATHON DHF104 (0+20)  \n 3. START HF 2 (0+10)
+    </string>
+    <string name="paraphins_old_plus_6_10">
+        1. SWIX  MARATHON DHF104BW-4 (0+20)\n 2. START HF 2 (0+10) \n 3. Ski Go HF (+20-1)
+    </string>
+    <string name="paraphins_arcificial_plus_6_10">
+        1. Ski Go HF (+20-1) \n 2. SWIX  MARATHON DHF104BW-4 (0+20) \n 3. START HF 2 (0+10)
+    </string>
+
+
+    <!--Powers accelerators +5 +10-->
+    <string name="powders_accelerators_fresh_plus_6_10">
+        1. OPTIWAX (+10-10) \n 2.SWIX FC10X (0+10)
+    </string>
+    <string name="powders_accelerators_old_plus_6_10">
+        1. OPTIWAX (+10-10) \n 2.START BM1(+10-2) \n 3. Ski Go C22(+22-2) ускоритель \n 4. SWIX FC8A(+10-2) ROCKET эмульсия
+    </string>
+    <string name="powders_accelerators_crude_plus_6_10">
+        1. SWIX  FC10X(0+15)  порошок \n 2. VAUHTI Silverfox wet(0+15) спресовка
+    </string>
+    <string name="powders_accelerators_arcificial_plus_6_10">
+        1. Ski Go C22(+22-2) ускоритель \n 2. START SFR99(+9-9) ускоритель \n 3. SWIX FC8A(+10-2)ROCKET эмульсия
+    </string>
+
+<!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins +5 +3-->
+    <string name="paraphins_fresh_plus_3_5">
+        1. Start FHF2 (+5+1)\n 2. VAUHTI HF(-1+10) \n 3. SWIX MARATHON DHF104 (0+20)
+    </string>
+    <string name="paraphins_crude_plus_3_5">
+        1. START HF 2 (0+10) \n 2. SWIX HF10 (0+10) \n 3. SWIX LF10 (0+10) \n 4.VAUHTI HF(-1+10)
+    </string>
+    <string name="paraphins_old_plus_3_5">
+        1. VAUHTI HF(-1+10) \n 2. SWIX MARATHON DHF104 BW-4 (0+20) \n 3. START FHF2 (+5+1)
+    </string>
+    <string name="paraphins_arcificial_plus_3_5">
+        1. START FHF 2 (+5+1) \n  2.Ski Go HF (+20-1) \n  3.SWIX  HF10BW(0+10)
+    </string>
+
+
+    <!--Powers accelerators +5 +3-->
+    <string name="powders_accelerators_fresh_plus_3_5">
+        1. START FHF5(-1+5) \n 2.Rex TK 245 (+5-5) \n 3. SWIX  FC10X(0+10)
+    </string>
+    <string name="powders_accelerators_old_plus_3_5">
+        1.START FHF5(-1+5) \n 2.Rex TK245(+5-5) \n 3. SWIX FC8A(+10-2) ROCKET эмульсия
+    </string>
+    <string name="powders_accelerators_crude_plus_3_5">
+        1.START FHF5(-1+5) \n 2.SWIX  FC10X(0+15) \n 3.VAUHTI Silverfox wet(0+15) спресовка
+    </string>
+    <string name="powders_accelerators_plus_arcificial_plus_3_5">
+        1.START FHF5(-1+5) \n 2.START BM7(+10-3) \n 3.OPTIWAX (+10-10) \n 4.SWIX FC8A(+10-2)ROCKET эмульсия
+    </string>
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+    <!--Paraphins +2 +1-->
+    <string name="paraphins_fresh_plus_2_1">
+        1. START FHF2 (+5+1) \n 2.VAUHTI HF (-1+10) \n 3.SWIX LF (-6-12) второй слой TOKO HF (-4+10) \n 4. REX HF11(+2-2) \n 5. START PHF200 (+10+1)
+    </string>
+    <string name="paraphins_crude_plus_2_1">
+        1. START FHF 2 (+5-1) \n 2. SWIX HF10 (0+10) \n 3. TOKO HF RED (-4-12) (парадокс) \n 4. VAUHTI HF (-1+10)
+    </string>
+    <string name="paraphins_old_plus_2_1">
+       1. SWIX MARATHON DHF104 BW-4 (0+20) \n 2. START FHF2 (+5+1) \n 3. ЛУЧ/REY HF (+3-3) верхний слой VF1(+10-10)
+    </string>
+    <string name="paraphins_arcificial_plus_2_1">
+        1. START FHF2 (+5+1) \n 2. VAUHTI HF2 (+10-1) \n 3. SWIX HF8BW (-4+4)
+    </string>
+
+
+    <!--Powers accelerators +2 +1-->
+    <string name="powders_accelerators_fresh_plus_2_1">
+       1. START HF11(+5-10) ускоритель \n 2. REX NAGANO (+3-3) ускоритель \n 3. SWIX FC10X (0+10)
+    </string>
+    <string name="powders_accelerators_old_plus_2_1">
+        1. VAUHTI F108 (+1-15) ускоритель \n 2. START HF11 (+5-10) ускоритель \n 3. START FHF5 (+5-1) порошок
+    </string>
+    <string name="powders_accelerators_crude_plus_2_1">
+         1. START FHF5 (+5-1) порошок \n 2. TOKO Jet Stream (+10-4) порошок \n 3. START HFXT (+5-5) эмульсия
+    </string>
+    <string name="powders_accelerators_arcificial_plus_2_1">
+        1. START FHF5 (-1+5) \n 2. TOKO JetStream (+10-4) \n 3. START HF11 (5-10) \n 4. SWIX FC8A (+10-2)ROCKET эмульсия
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins 0-->
+    <string name="paraphins_fresh_0">
+        1. VAUHTI HF (-1+10) \n 2. START FHF2 (+5+1) \n 3. SWIX LF6 (-6-12) \n 4. REX HF11 (+2-2)
+    </string>
+    <string name="paraphins_old_0">
+      1. VAUHTI HF Moly Mid (+3-5) \n 2. SWIX HF 8BW (-4+4) \n 3. SKI GO HF (+1-5) \n 4. START PHF 400
+    </string>
+    <string name="paraphins_crude_0">
+       1. VAUHTI HF (+3-5) \n 2. Rex 425 (+4-2) \n 3. START FHF2 (+5-1)
+    </string>
+
+    <string name="paraphins_arcificial_0">
+        1. VAUHTI LF (-1-10) \n 2. VAUHTI HF (+3-5) \n 3. SWIX HF8BW (-4+4) \n 4. SKI GO HF (+1-5)
+    </string>
+
+
+    <!--Powers accelerators 0-->
+    <string name="powders_accelerators_fresh_0">
+       1. START HF5 (+5-3) \n 2. VAUHTI F108 (+1-15) \n 3. SWIX FC7X (+2-6)
+    </string>
+    <string name="powders_accelerators_old_0">
+        1. SKI GO (+5-5) \n 2. Rex TK 245 (+5-5) \n 3. START BM7 (+10-3)
+    </string>
+    <string name="powders_accelerators_crude_0">
+       1. Rex NAGANO (+3-3) ускоритель \n 2. SWIX FC10X (0+15) порошок
+    </string>
+    <string name="powders_accelerators_arcificial_0">
+        1. SWIX FC10X (0+15) \n 2. SKI GO (+10-6) \n 3. VAUHTI Carbon HF C15 (0-6)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -1 -2 -->
+    <string name="paraphins_fresh_minus_1_2">
+        1. VAUHTI HF (-1+10) \n 2. SWIX LF8 (-2-8) верхний слой RODE HF (0-4) \n 3. START FHF4 (-1-6)
+    </string>
+    <string name="paraphins_old_minus_1_2">
+     1. VAUHTI HF (+3-5) \n 2. SWIX HF 8BW (-4+4) \n 3. SKI GO HF (+1-5) \n 4. START FHF4 (-1-6) \n 5. Zet HF4 (0-6)
+    </string>
+    <string name="paraphins_crude_minus_1_2">
+       1. VAUHTI HF (+3-5) \n 2. Rex 423 (-1-10) \n 3. Rex HF21 (-2-8) \n 4. START FHF4 (-1-6)
+    </string>
+    <string name="paraphins_arcificial_minus_1_2">
+        1. START FHF4 (-1-6) \n 2. VAUHTI HF (+3-5) \n 3. SWIX HF8BW (-4+4) \n 4. SKI GO HF (+1-5)
+    </string>
+
+
+    <!--Powers accelerators -1 -2 -->
+    <string name="powders_accelerators_fresh_minus_1_2">
+      1. SWIX FC7X (+2-6) \n 2. START HF5 (+5-3) \n 3. VAUHTI F108 (+1-15) ускоритель
+    </string>
+    <string name="powders_accelerators_old_minus_1_2">
+        1. SWIX FC7X (+2-6) \n 2. START HF5 (+5-3) \n 3. START FHF7 (-1-5) \n 4. SKI GO (+5-5)
+    </string>
+    <string name="powders_accelerators_crude_minus_1_2">
+       1. Rex TK245 (+5-5) \n 2. SWIXFC78 (+10-10) \n 3. Rex NAGANO (+3-3) ускоритель \n 4. START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_1_2">
+        1. SWIX FC7X (+2-6) \n 2. SKI GO (+10-6) \n 3. VAUHTI Carbon HF C15 (0-6) \n 4. START FHF7 (-1-5)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -3 -->
+    <string name="paraphins_fresh_minus_3">
+        1. VAUHTI HF COLD (-1-10) \n 2. SWIX LF8 (-2-8) верхний слой RODE HF (0-4) \n 3. START FHF4 (-1-6)
+    </string>
+    <string name="paraphins_old_minus_3">
+     1. SWIX HF 8BW (-4+4) \n 2. SKI GO HF (+1-5) \n 3. START FHF4 (-1-6) \n 4. Rex HF21 (-2-8)
+    </string>
+    <string name="paraphins_crude_minus_3">
+       1. Rex 423 (-1-10) \n 2. HOLMENKOL (-4-8) верхний слой Rex HF 416 (0-4) \n 3. START FHF4 (-1-6)
+    </string>
+    <string name="paraphins_arcificial_minus_3">
+       1. START FHF4 (-1-6) \n 2. SWIX HF8BW (-4+4)
+    </string>
+
+
+    <!--Powers accelerators -3 -->
+    <string name="powders_accelerators_fresh_minus_3">
+      1. SWIX FC7X (+2-6) \n 2. RexTK245 (+5-5) \n 3. VAUHTI F108 (+1-15) ускоритель 4. SKI GO C 105 (+1-15)
+    </string>
+    <string name="powders_accelerators_old_minus_3">
+        1. SWIX FC7X (+2-6) \n 2. START HF5 (+5-3) \n 3. Rex TK28 (-2-8) \n 4. SKI GO (+5-5)
+    </string>
+    <string name="powders_accelerators_crude_minus_3">
+       1. Rex TK245 (+5-5) \n 2. SWIXFC78 (+10-10) \n 3. Rex NAGANO (+3-3) ускоритель \n 4. START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_3">
+        1. SWIX FC7X (+2-6) \n 2. SKI GO (+10-6) \n 3. VAUHTI Carbon HF C15 (0-6) \n 4. START FHF7 (-1-5)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -4 -5 -->
+    <string name="paraphins_fresh_minus_4_5">
+         1. VAUHTI HF COLD (-1-10) \n 2. Ski GO LF (-3-10) \n 3. START FHF4 (-1-6) \n 4. Rex HF21 (-2-8)
+    </string>
+    <string name="paraphins_old_minus_4_5">
+     1. SWIX HF 8BW (-4+4) \n 2. START FHF4 (-1-6) \n 3. Rex HF Olympiko (-4-10)
+    </string>
+    <string name="paraphins_crude_minus_4_5">
+       1. Rex HF (-4-10) синий \n 2. START HF4 (-2-7) \n 3. START FHF4 (-1-6)
+    </string>
+    <string name="paraphins_arcificial_minus_4_5">
+      1. START FHF4 (-1-6) \n 2. Rex HF Olympiko (-4-10) \n 3. Ski Go HF (-3-10)
+    </string>
+
+
+    <!--Powers accelerators -4  -5-->
+    <string name="powders_accelerators_fresh_minus_4_5">
+      1. SWIX FC7X (+2-6) \n 2. RexTK29 (-2-8) \n 3. VAUHTI F108 (+1-15) ускоритель \n 4. SKI GO C 105 (+1-15) \n 5. START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_old_minus_4_5">
+        1. SWIX FC7X (+2-6) \n 2. Rex TK28 (-2-8) \n 3. SKI GO C 44 (+3-9) \n 4.  START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_crude_minus_4_5">
+      1. Rex TK245 (+5-5) \n 2. SWIXFC6X (-1-10) \n 3. VAUHTI F108 (+1-15) ускоритель \n 4. SKI GO C 105 (+1-15)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_4_5">
+        1. SWIX FC7X (+2-6) \n 2. SKI GO (+10-6) \n 3. VAUHTI Carbon HF C15 (0-6) \n 4. SWIX LK CERA F (0-10) \n 5. START SFR 99 (+9-9)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -6 -7 -->
+    <string name="paraphins_fresh_minus_6_7">
+         1. VAUHTI HF COLD (-1-10) \n 2. Ski GO LF (-3-10) \n 3. START FHF4 (-1-6) \n 4. Rex HF,LF (-4-10) \n 5.  START HF XT (-2-8)
+    </string>
+    <string name="paraphins_old_minus_6_7">
+     1. SWIX HF 7 BW(-2-8) \n 2. START FHF4 (-1 -6) \n 3. Rex HF Olympiko (-4-10) \n 4. Ski Go(-3-10)синий
+    </string>
+    <string name="paraphins_crude_minus_6_7">
+       1.Rex HF (-4-10) синий  \n 2. START HF XT (-2-8) \n 3. START HF (-4-10)
+    </string>
+    <string name="paraphins_arcificial_minus_6_7">
+      1. SWIX LF6X (-6-12) \n 2. START HF XT (-2-8) \n 3. SWIX HF7 BW (-2-8) \n 4. Ski Go HF (-3-10)
+    </string>
+
+
+    <!--Powers accelerators -6 -7 -->
+    <string name="powders_accelerators_fresh_minus_6_7">
+      1. SWIX FC7X (+2-6) \n 2. RexTK29 (-2-8) \n 3. VAUHTI F108 (+1-15) ускоритель \n 4. SKI GO C 105 (+1-15) \n 5. START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_old_minus_6_7">
+        1. SWIX FC5X (-3-15) \n 2. Rex TK29 (-2-8) \n 3. F9-40W (9й элемент) (-5-20) \n 4.  START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_crude_minus_6_7">
+      1. SWIXFC6X (-1-10) \n 2. VAUHTI F108 (+1-15) ускоритель \n 3. SKI GO C 105 (+1-15) \n 4. START SFR 99 (+9-9)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_6_7">
+        1. SWIX FC5X (-3-15) \n 2. VAUHTI F108 (+1-15) ускоритель \n 3. F940W (9й элемент) (-5-20) \n 4. SWIX LK CERA F (0-10)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -8 -9 -->
+    <string name="paraphins_fresh_minus_8_9">
+         1. VAUHTI HF COLD(-1-10) \n 2. Ski GO LF(-3-10) \n 3. START FHF6(-5-14) \n 4. Rex LF(-2-10) \n 5.  START HF XT (-6-12)
+    </string>
+    <string name="paraphins_old_minus_8_9">
+     1. START FHF6(-5-14) \n 2. Rex HF (-2-10) \n 3. Ski Go(-3-10)синий \n 4. Ski Go(-1-12)
+    </string>
+    <string name="paraphins_arcificial_minus_8_9">
+      1. SWIX LF6X(-6-12) \n 2. START HF XT(-6-12) \n 3. Ski Go HF(-3-10) \n 4. Rex LF(-2-10)синий
+    </string>
+
+
+    <!--Powers accelerators -8  -9-->
+    <string name="powders_accelerators_fresh_minus_8_9">
+      1. VAUHTI F108(+1-15)ускоритель \n 2. SKI GO C 105(+1-15) \n 3. OPTIWAX POWDER 2(-8-20) \n 4. START SFR 99(+9-9)
+    </string>
+    <string name="powders_accelerators_old_minus_8_9">
+        1. SWIX FC5X(-3-15) \n 2. Rex TK29(-2-8) \n 3. F9-40W (9й элемент)(-5-20) \n 4.  START BM 3 (-2-10)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_8_9">
+        1. SWIX FC5X(-3-15) \n 2. VAUHTI F108(+1-15)ускоритель \n 3. F940W(9й элемент)(-5-20) \n 4. SWIX LK CERA F(0-10) \n 5. START SFR 99(+9-9)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -10 -11 -->
+    <string name="paraphins_fresh_minus_10_11">
+         1. Ski GO LF(-1-12) \n 2. START FHF6(-5-14) \n 3. Rex LF(-2-10) \n 4. START LF8 (-7-12)
+    </string>
+    <string name="paraphins_old_minus_10_11">
+     1. START FHF6(-5-14) \n 2. Rex HF (-2-10) \n 3. Ski Go HFviolet(-1-12) \n 4. SWIX LF7(-2-8)верхний слой TOKO(-2-11)
+    </string>
+    <string name="paraphins_arcificial_minus_10_11">
+      1. SWIX LF6X(-6-12) \n 2. START FHF 6(-5-14) \n 3. Ski Go LF(-1-12) \n 4. Rex LF(-2-10)синий
+    </string>
+
+
+    <!--Powers accelerators -10 -11 -->
+    <string name="powders_accelerators_fresh_minus_10_11">
+      1. VAUHTI F108(+1-15)ускоритель \n 2. SWIX FC5X(-3-15) \n 3. SKI GO C 105(+1-15) \n 4. OPTIWAX POWDER 2(-8-20)
+    </string>
+    <string name="powders_accelerators_old_minus_10_11">
+        1. Rex TK 820 (-8-20) \n 2.F9-40W (9й элемент)(-5-20) \n 3. START BM 3 (-2-10) \n 4. OPTIWAX POWDER 2(-8-20)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_10_11">
+        1. SWIX FC5X(-3-15) \n 2. VAUHTI FC Powder(+5-20) \n 3. F940W(9й элемент)(-5-20) \n 4. OPTIWAX POWDER 2(-8-20)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -12 -13 -->
+    <string name="paraphins_fresh_minus_12_13">
+         1. Ski GO LF(-7-20) \n 2. START FHF6(-5-14) \n 3. TOKO HF(-9-30)
+    </string>
+    <string name="paraphins_old_minus_12_13">
+     1. START FHF6(-5-14) \n 2. Rex HF31 (-8-20) \n 3. Rex RCF 404(-10-25) \n 4. SWIX LF(-10-32)
+    </string>
+    <string name="paraphins_arcificial_minus_12_13">
+      1. START FHF 6(-5-14) \n 2. Ski Go LF(-7-20) \n 3. Rex LF(-8-20)
+    </string>
+
+
+    <!--Powers accelerators -12 -13 -->
+    <string name="powders_accelerators_fresh_minus_12_13">
+      1. SWIX FC5X(-3-15) \n 2. SKI GO C 105(+1-15) \n 3. VAUHTI F108(+1-15)ускоритель
+    </string>
+    <string name="powders_accelerators_old_minus_12_13">
+        1. Rex TK 820 (-8-20) \n 2.SWIX FC5X(-3-15) \n 3. OPTIWAX POWDER 2(-8-20)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_12_13">
+        1. SWIX FC5X(-3-15) \n 2. VAUHTI FC Powder(+5-20) \n 3. OPTIWAX POWDER 2(-8-20)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -14 -15 -->
+    <string name="paraphins_fresh_minus_14_15">
+         1. Ski GO LF(-7-20) \n 2. START FHF6(-5-14) \n 3. VAUHTI LF(-1-25)
+    </string>
+    <string name="paraphins_old_minus_14_15">
+     1. START FHF6(-5-14) \n 2. Rex 433(7-25) верхний слой RexLF (-8-20) \n 3. Rex RCF 404(-10-25) \n 4. VAUHTI LF(-1-25)
+    </string>
+    <string name="paraphins_arcificial_minus_14_15">
+      1. START FHF 6(-5-14) \n 2. Ski Go LF(-7-20) \n 3. Rex 404(-10-25)
+    </string>
+
+
+    <!--Powers accelerators -14 -15 -->
+    <string name="powders_accelerators_fresh_minus_14_15">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23) \n 2. SWIX FC 4X(-10-20) \n 3. VAUHTI F108(+1-15)ускоритель
+    </string>
+    <string name="powders_accelerators_old_minus_14_15">
+        1. Rex TK 820 (-8-20) \n 2. Rex 63(-5-20) \n 3. OPTIWAX POWDER 2(-8-20) \n 4. ФЕСТА СПОРТFS-P8 LUX  F-1 (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_14_15">
+        1. Rex63(-5-20) \n 2. VAUHTI FC Powder(-6-20) \n 3. SKI GO C380(-7-20)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+
+    <!--Paraphins -16 -17 -->
+    <string name="paraphins_fresh_minus_16_17">
+         1. SWIX LF4X(-12-32) \n 2. TOKO LF(-10-32) \n 3. START HF10(-7-25) \n 4. START HF XT(-10-25)
+    </string>
+    <string name="paraphins_old_minus_16_17">
+     1. START HF XT(-10-25) \n 2. Rex 433(7-25) верхний слой RexLF (-8-20) \n 3. VAUHTI  LF(-1-25) \n 4. SKI GO (-7-20)
+    </string>
+    <string name="paraphins_arcificial_minus_16_17">
+      1. Rex 424(-8-20) \n 2. SWIX LF 4X(-12-32) \n 3. Ski Go LF(-7-20)\n 4. START HF XT(-10-25)
+    </string>
+
+
+    <!--Powers accelerators -16 -17 -->
+    <string name="powders_accelerators_fresh_minus_16_17">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23) \n 2. SWIX FC 4X(-10-20) \n 3. VAUHTI F108(+1-15)ускоритель
+    </string>
+    <string name="powders_accelerators_old_minus_16_17">
+        1. Rex TK 820 (-8-20) \n 2. Rex 63(-5-20) \n 3. OPTIWAX POWDER 2(-8-20) \n 4. VORTEX (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_16_17">
+        1. Rex63(-5-20) \n 2. VAUHTI FC Powder(-6-20) \n 3. SWIX FC 4X(-10-20)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+
+    <!--Paraphins -18 -19 -->
+    <string name="paraphins_fresh_minus_18_19">
+         1. SWIX LF4X(-12-32) \n 2. START HF10(-7-25) \n 3. START HF XT(-10-25) \n 4. VAUHTI LF(-1-25) \n 5. ЛУЧ(REY)(-10-30)
+    </string>
+    <string name="paraphins_old_minus_18_19">
+     1. START HF XT(-10-25) \n 2. Rex 424(-8-20) \n 3. VAUHTI  LF(-1-25) \n 4. SKI GO (-7-20)
+    </string>
+    <string name="paraphins_arcificial_minus_18_19">
+      1. Rex 424(-8-20) \n 2. SWIX LF 4X(-12-32) \n 3. Ski Go LF(-7-20)
+    </string>
+
+
+    <!--Powers accelerators -18 -19 -->
+    <string name="powders_accelerators_fresh_minus_18_19">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23) \n 2. SWIX FC 4X(-10-20)
+    </string>
+    <string name="powders_accelerators_old_minus_18_19">
+        1. Rex TK 820 (-8-20) \n 2. Rex 63(-5-20) \n 3. OPTIWAX POWDER 2(-8-20) \n 4. VORTEX (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_18_19">
+        1. Rex TK72(0-20) \n 2. SWIX FC 4X(-10-20)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -20 -21 -->
+    <string name="paraphins_fresh_minus_20_21">
+         1. SWIX LF4X(-12-32) \n 2. START SG10(-10-30) \n 3. START FHF8(-10-30)
+    </string>
+    <string name="paraphins_old_minus_20_21">
+     1. START FHF8(-10-30) \n 2. SWIX LF4X(-12-32) \n 3. START SG8(-10-30) \n 4. SKI GO (-7-20)
+    </string>
+    <string name="paraphins_arcificial_minus_20_21">
+      1. Rex 424(-8-20) \n 2. SWIX LF 4X(-12-32) \n 3. Ski Go LF(-7-20)
+    </string>
+
+
+    <!--Powers accelerators -20 -21 -->
+    <string name="powders_accelerators_fresh_minus_20_21">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23) \n 2. SWIX FC 4X(-10-20)
+    </string>
+    <string name="powders_accelerators_old_minus_20_21">
+        1. SOLDA HP 06(-7-23) \n 2. VORTEX (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_20_21">
+        1. Rex TK72(0-20) \n 2. ФЕСТА (-3-23)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -22 -23 -->
+    <string name="paraphins_fresh_minus_22_23">
+         1. SWIX LF4X(-12-32) \n 2. START SG10(-10-30) \n 3. SWIX СH4(-12-32) \n 4. TOKO NF синий(-10-30)
+    </string>
+    <string name="paraphins_old_minus_22_23">
+     1. START FHF8(-10-30) \n 2. SWIX CH(-12-32) \n 3. START SG8(-10-30)с графитовой базой
+    </string>
+    <string name="paraphins_arcificial_minus_22_23">
+      1. SWIX LF 4X(-12-32) \n 2. SWIX СH 4(-12-32) \n 3. START SG8(-10-30)
+    </string>
+
+
+    <!--Powers accelerators -22 -23 -->
+    <string name="powders_accelerators_fresh_minus_22_23">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23)
+    </string>
+    <string name="powders_accelerators_old_minus_22_23">
+        1. SOLDA HP 06(-7-23) \n 2. VORTEX (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_22_23">
+        1. ФЕСТА (-3-23)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -24 -25 -->
+    <string name="paraphins_fresh_minus_24_25">
+         1. SWIX LF4X(-12-32) \n 2. START SG10(-10-30) \n 3. SWIX СH4(-12-32) \n 4. TOKO NF синий(-10-30)
+    </string>
+    <string name="paraphins_old_minus_24_25">
+     1. START FHF8(-10-30) \n 2. SWIX CH(-12-32) \n 3. START SG8(-10-30)с графитовой базой
+    </string>
+    <string name="paraphins_arcificial_minus_24_25">
+      1. TOKO NF(LF)(-10-30) \n 2. SWIX СH 4(-12-32) \n 3. START SG8(-10-30)
+    </string>
+
+
+    <!--Powers accelerators -22 -23 -->
+    <string name="powders_accelerators_fresh_minus_24_25">
+      1. ФЕСТА СПОРТFS-P8 LUXE F-1 (-3-23) \n 2. TOKO JetStream(-8-30)
+    </string>
+    <string name="powders_accelerators_old_minus_24_25">
+        1. HOLMENKOL  Race Powder(-14-25) \n 2. VORTEX (-3-23)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_24_25">
+        1. TOKO (-8-30) \n 2. HOLMENKOL  Race Powder(-14-25)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+
+    <!--Paraphins -26 -30 -->
+    <string name="paraphins_fresh_minus_26_30">
+         1. SWIX LF4X(-12-32) \n 2. START SG10(-10-30) \n 3. SWIX СH4(-12-32) \n 4. TOKO NF синий(-10-30)
+    </string>
+    <string name="paraphins_old_minus_26_30">
+     1. START FHF8(-10-30) \n 2. SWIX CH(-12-32) \n 3. START SG8(-10-30)с графитовой базой
+    </string>
+    <string name="paraphins_arcificial_minus_26_30">
+      1. TOKO NF(LF)(-10-30) \n 2. SWIX СH 4(-12-32) \n 3. START SG8(-10-30) \n 4. START MF(-10-30)
+    </string>
+
+
+    <!--Powers accelerators -26 -30 -->
+    <string name="powders_accelerators_fresh_minus_26_30">
+      1. TOKO JetStream(-8-30)
+    </string>
+    <string name="powders_accelerators_old_minus_26_30">
+        1. TOKO (-10-30)ускоритель \n 2. SWIX LF3(-12-32)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_26_30">
+        1. TOKO (-8-30) \n 2. SWIX LF3(-12-32)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
+
+    <!--Paraphins -31 -35 -->
+    <string name="paraphins_fresh_minus_31_35">
+         1. START SG10(-10-30) \n 2. SWIX СH4(-12-32)
+    </string>
+    <string name="paraphins_old_minus_31_35">
+     1. SWIX CH(-12-32) \n 3. START SG8(-10-30)с графитовой базой
+    </string>
+    <string name="paraphins_arcificial_minus_31_35">
+      1. SWIX СH 4(-12-32) \n 2. START SG8(-10-30)
+    </string>
+
+
+    <!--Powers accelerators -31 -35 -->
+    <string name="powders_accelerators_fresh_minus_31_35">
+      1. TOKO JetStream(-8-30)
+    </string>
+    <string name="powders_accelerators_old_minus_31_35">
+        1. TOKO (-10-30)ускоритель \n 2. SWIX LF3(-12-32)
+    </string>
+    <string name="powders_accelerators_arcificial_minus_31_35">
+        1. SWIX LF3(-12-32)
+    </string>
+
+
+    <!--__________________________________________________________________________________________________________________________________________________________________________________-->
+
 </resources>

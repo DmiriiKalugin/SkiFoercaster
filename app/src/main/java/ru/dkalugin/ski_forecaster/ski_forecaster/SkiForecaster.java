@@ -5,12 +5,18 @@ package ru.dkalugin.ski_forecaster.ski_forecaster;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.method.LinkMovementMethod;
+import android.text.util.Linkify;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import ru.dkalugin.ski_forecaster.R;
 import ru.dkalugin.ski_forecaster.condition.Arcificial;
@@ -40,56 +46,87 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
 
     }
 
+    private void openSiteDialog() {
 
+
+        final SpannableString webaddress = new SpannableString(
+                "Не указана температура воздуха!!!!");
+        Linkify.addLinks(webaddress, Linkify.ALL);
+
+        final AlertDialog aboutDialog = new AlertDialog.Builder(
+                SkiForecaster.this).setMessage(webaddress)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // TODO Auto-generated method stub
+                    }
+                }).create();
+
+        aboutDialog.show();
+
+        ((TextView) aboutDialog.findViewById(android.R.id.message))
+                .setMovementMethod(LinkMovementMethod.getInstance());
+    }
     @Override
     public void onClick(View v) {
 
         EditText air_temperature = (EditText) findViewById(R.id.air_temperature);
-        String temperature = air_temperature.getText().toString();
 
-        final ProgressDialog progressDialog = new ProgressDialog(SkiForecaster.this, R.style.MyTheme);
-        progressDialog.setProgressStyle(android.R.style.Widget_ProgressBar_Small);
-        progressDialog.show();
-//        After 2 Seconds i dismiss progress Dialog
-
-        new Thread(){
-            @Override
-            public void run() {
-                super.run();
-                try {
-                    Thread.sleep(2000);
-                    if (progressDialog.isShowing())
-                        progressDialog.dismiss();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        }.start();
-
-
-        switch (v.getId()){
-            case R.id.btn_fresh:
-                Intent fresh = new Intent(this, Fresh.class);
-                fresh.putExtra("temperature", temperature);
-                startActivity(fresh);
-                break;
-            case R.id.btn_old:
-                Intent old = new Intent(this, Old.class);
-                old.putExtra("temperature", temperature);
-                startActivity(old);
-                break;
-            case R.id.btn_crude:
-                Intent crude = new Intent(this, Crude.class);
-                crude.putExtra("temperature", temperature);
-                startActivity(crude);
-                break;
-            case R.id.btn_artificial:
-                Intent artificial = new Intent(this, Arcificial.class);
-                artificial.putExtra("temperature", temperature);
-                startActivity(artificial);
-                break;
+        if (air_temperature.getText().toString().equals(""))
+        {
+            openSiteDialog();
 
         }
+        else
+        {
+            String temperature = air_temperature.getText().toString();
+
+            final ProgressDialog progressDialog = new ProgressDialog(SkiForecaster.this, R.style.MyTheme);
+            progressDialog.setProgressStyle(android.R.style.Widget_ProgressBar_Small);
+            progressDialog.show();
+//        After 2 Seconds i dismiss progress Dialog
+
+            new Thread(){
+                @Override
+                public void run() {
+                    super.run();
+                    try {
+                        Thread.sleep(2000);
+                        if (progressDialog.isShowing())
+                            progressDialog.dismiss();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }.start();
+
+
+            switch (v.getId()){
+                case R.id.btn_fresh:
+                    Intent fresh = new Intent(this, Fresh.class);
+                    fresh.putExtra("temperature", temperature);
+                    startActivity(fresh);
+                    break;
+                case R.id.btn_old:
+                    Intent old = new Intent(this, Old.class);
+                    old.putExtra("temperature", temperature);
+                    startActivity(old);
+                    break;
+                case R.id.btn_crude:
+                    Intent crude = new Intent(this, Crude.class);
+                    crude.putExtra("temperature", temperature);
+                    startActivity(crude);
+                    break;
+                case R.id.btn_artificial:
+                    Intent artificial = new Intent(this, Arcificial.class);
+                    artificial.putExtra("temperature", temperature);
+                    startActivity(artificial);
+                    break;
+
+            }
+        }
+
 
 
     }
