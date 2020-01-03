@@ -31,9 +31,14 @@ public class Old extends AppCompatActivity {
 
         int t =  Integer.parseInt (temperature);
 
+        TextView humidity = (TextView) findViewById(R.id.humidity_2_old);
         TextView paraphin = (TextView) findViewById(R.id.paraphin_old);
         TextView powers_accelerator = (TextView) findViewById(R.id.powders_accelerators_2_old);
 
+
+        if (t <=-18 && t >=-35){
+            humidity.setText(getString(R.string.forty_five_ninety));
+        }
 
         if (t > 5 && t <= 10){
             paraphin.setText(getString(R.string.paraphins_old_plus_6_10));

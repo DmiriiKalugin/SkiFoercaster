@@ -15,6 +15,7 @@
     <string name="colon">:</string>
     <string name="humidity">Влажность</string>
     <string name="fifty_five_hundred">55/100</string>
+    <string name="forty_five_ninety">45/90+</string>
     <string name="footnote">Помните, что конечный результат зависит от правильного нанесения мази.</string>
     <string name="powders_accelerators">Порошки ускорители</string>
     <string name="powders_accelerators_default">Здесь отображаются  Порошки ускорители</string>
@@ -205,13 +206,13 @@
 
     <!--Powers accelerators -3 -->
     <string name="powders_accelerators_fresh_minus_3">
-      1. SWIX FC7X (+2-6) \n 2. RexTK245 (+5-5) \n 3. VAUHTI F108 (+1-15) ускоритель 4. SKI GO C 105 (+1-15)
+      1. SWIX FC7X (+2-6) \n 2. RexTK245 (+5-5) \n 3. VAUHTI F108 (+1-15) ускоритель \n 4. SKI GO C 105 (+1-15)
     </string>
     <string name="powders_accelerators_old_minus_3">
         1. SWIX FC7X (+2-6) \n 2. START HF5 (+5-3) \n 3. Rex TK28 (-2-8) \n 4. SKI GO (+5-5)
     </string>
     <string name="powders_accelerators_crude_minus_3">
-       1. Rex TK245 (+5-5) \n 2. SWIXFC78 (+10-10) \n 3. Rex NAGANO (+3-3) ускоритель \n 4. START SFR 99 (+9-9)
+      1. Rex TK245 (+5-5) \n 2. SWIXFC6X (-1-10) \n 3. TOKO JetStream (+10-4) \n 4. START SFR 99 (+9-9)
     </string>
     <string name="powders_accelerators_arcificial_minus_3">
         1. SWIX FC7X (+2-6) \n 2. SKI GO (+10-6) \n 3. VAUHTI Carbon HF C15 (0-6) \n 4. START FHF7 (-1-5)
