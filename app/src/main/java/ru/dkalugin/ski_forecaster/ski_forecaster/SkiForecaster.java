@@ -9,6 +9,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
@@ -17,6 +18,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import ru.dkalugin.ski_forecaster.R;
 import ru.dkalugin.ski_forecaster.condition.Arcificial;
@@ -26,12 +28,43 @@ import ru.dkalugin.ski_forecaster.condition.Old;
 
 public class   SkiForecaster extends AppCompatActivity  implements View.OnClickListener{
 
-
+    private static final String PREFERENCE_NAME = "System.io";
+    private static int value = 1;
+    private static int value_min = 5;
+    SharedPreferences preferences;
+    String run_more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ski_forecaster);
+
+        preferences = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt(PREFERENCE_NAME, value);
+        editor.apply();
+
+        int sp = preferences.getInt(PREFERENCE_NAME, 0);
+        if (sp <=5){
+            int attempts = value_min - value;
+            if (attempts == 1){
+                run_more =  "Можно запустить ещё " + attempts + " раз";
+            }
+            else if (attempts == 0){
+                run_more = "Это последний запуск на этой неделе";
+            }
+            else {
+                run_more = "Можно запустить ещё " + attempts + " раза";
+            }
+
+            Toast.makeText(this, run_more, Toast.LENGTH_LONG).show();
+            value++;
+        }
+        else {
+            finish();
+            value = 1;
+            Toast.makeText(this, "Лимит исчерпан", Toast.LENGTH_LONG).show();
+        }
 
 
         Button btn_fresh = (Button) findViewById(R.id.btn_fresh);
@@ -68,6 +101,9 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         ((TextView) aboutDialog.findViewById(android.R.id.message))
                 .setMovementMethod(LinkMovementMethod.getInstance());
     }
+
+
+
     @Override
     public void onClick(View v) {
 
@@ -123,12 +159,8 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
                     artificial.putExtra("temperature", temperature);
                     startActivity(artificial);
                     break;
-
             }
         }
-
-
-
     }
 
 
