@@ -11,6 +11,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.provider.ContactsContract;
 import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
@@ -20,52 +22,38 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.Timer;
+import java.util.TimerTask;
+
 import ru.dkalugin.ski_forecaster.R;
 import ru.dkalugin.ski_forecaster.condition.Arcificial;
 import ru.dkalugin.ski_forecaster.condition.Crude;
 import ru.dkalugin.ski_forecaster.condition.Fresh;
 import ru.dkalugin.ski_forecaster.condition.Old;
 
-public class   SkiForecaster extends AppCompatActivity  implements View.OnClickListener{
+public class   SkiForecaster extends AppCompatActivity  implements View.OnClickListener {
 
     private static final String PREFERENCE_NAME = "System.io";
-    private static int value = 1;
-    private static int value_min = 5;
+    private static final String PREFERENCE_TIME = "times";
+
+
+    private static int value = 0;
+
+    private static long current_time = 0;
+
     SharedPreferences preferences;
+    SharedPreferences time;
+    SharedPreferences.Editor ed_time;
     String run_more;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ski_forecaster);
-
-        preferences = getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putInt(PREFERENCE_NAME, value);
-        editor.apply();
-
-        int sp = preferences.getInt(PREFERENCE_NAME, 0);
-        if (sp <=5){
-            int attempts = value_min - value;
-            if (attempts == 1){
-                run_more =  "Можно запустить ещё " + attempts + " раз";
-            }
-            else if (attempts == 0){
-                run_more = "Это последний запуск на этой неделе";
-            }
-            else {
-                run_more = "Можно запустить ещё " + attempts + " раза";
-            }
-
-            Toast.makeText(this, run_more, Toast.LENGTH_LONG).show();
-            value++;
-        }
-        else {
-            finish();
-            value = 1;
-            Toast.makeText(this, "Лимит исчерпан", Toast.LENGTH_LONG).show();
-        }
-
 
         Button btn_fresh = (Button) findViewById(R.id.btn_fresh);
         Button btn_old = (Button) findViewById(R.id.btn_old);
@@ -77,7 +65,58 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         btn_crude.setOnClickListener(this);
         btn_artificial.setOnClickListener(this);
 
+        Date date = new Date();
+
+        current_time =  date.getTime();
+        time = getPreferences(MODE_PRIVATE);
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        preferences = getPreferences(MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putInt(PREFERENCE_NAME, value);
+        editor.apply();
+
+
+        if (preferences.getInt(PREFERENCE_NAME, 0) < 5) {
+            if (preferences.getInt(PREFERENCE_NAME, 0) == 4) {
+                ed_time = time.edit();
+                ed_time.clear();
+                ed_time.apply();
+
+                run_more = "Это последний просмотр";
+                Toast.makeText(this, run_more, Toast.LENGTH_SHORT).show();
+            }
+            value++;
+            if(value == 5){
+                ed_time = time.edit();
+                ed_time.putLong(PREFERENCE_TIME, current_time + 86400000);
+                ed_time.apply();
+
+                value++;
+            }
+        }
+        else {
+            if (value > 5){
+                if (current_time >= time.getLong(PREFERENCE_TIME, 0)){
+                    value = 0;
+                    ed_time = time.edit();
+                    ed_time.clear();
+                    ed_time.apply();
+
+                }
+                else {
+                    finish();
+                    Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
+                }
+
+            }
+        }
+    }
+
 
     private void openSiteDialog() {
 
@@ -97,7 +136,6 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
                 }).create();
 
         aboutDialog.show();
-
         ((TextView) aboutDialog.findViewById(android.R.id.message))
                 .setMovementMethod(LinkMovementMethod.getInstance());
     }
@@ -112,7 +150,6 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         if (air_temperature.getText().toString().equals(""))
         {
             openSiteDialog();
-
         }
         else
         {
@@ -162,6 +199,5 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
             }
         }
     }
-
 
 }
