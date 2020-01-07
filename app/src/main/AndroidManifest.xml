@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_ski_forecaster"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".about.About"></activity>
         <activity
             android:name=".condition.Arcificial"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -24,7 +25,7 @@
         <activity
             android:name=".ski_forecaster.SkiForecaster"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="stateHidden"/>
+            android:windowSoftInputMode="stateHidden" />
         <activity
             android:name=".splash.Splash"
             android:theme="@style/SplashTheme">
