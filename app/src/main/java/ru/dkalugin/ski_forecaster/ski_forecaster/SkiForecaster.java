@@ -48,6 +48,8 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
 
     private static int value = 0;
 
+    private static int time_art = 0;
+
     private static long current_time = 0;
 
     SharedPreferences preferences;
@@ -77,8 +79,15 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
 
         Date date = new Date();
 
-        current_time =  date.getTime();
+        current_time =  date.getTime()/1000/60/60 - 438000;
+        time_art = (int) current_time;
         time = getPreferences(MODE_PRIVATE);
+
+
+        System.out.println();
+        System.out.println();
+        System.out.println();
+
     }
 
     @Override
@@ -103,7 +112,7 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
             value++;
             if(value == 5){
                 ed_time = time.edit();
-                ed_time.putLong(PREFERENCE_TIME, current_time + 86400000);
+                ed_time.putInt(PREFERENCE_TIME, time_art + 24);
                 ed_time.apply();
 
                 value++;
@@ -111,7 +120,7 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         }
         else {
             if (value > 5){
-                if (current_time >= time.getLong(PREFERENCE_TIME, 0)){
+                if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
                     value = 0;
                     ed_time = time.edit();
                     ed_time.clear();
