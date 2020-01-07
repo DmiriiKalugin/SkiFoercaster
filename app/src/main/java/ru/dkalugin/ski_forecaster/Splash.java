@@ -1,5 +1,11 @@
 package ru.dkalugin.ski_forecaster;
 
+
+/**
+ * Разработчик приложения
+ * Калугин Дмитрий Игоревич
+ **/
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 
 import java.util.concurrent.TimeUnit;
+
+
 
 public class Splash extends AppCompatActivity {
 
