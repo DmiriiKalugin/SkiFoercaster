@@ -83,10 +83,25 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         time_art = (int) current_time;
         time = getPreferences(MODE_PRIVATE);
 
+        System.out.println(value);
+        System.out.println(time_art);
+        System.out.println(time.getInt(PREFERENCE_TIME, 0));
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        if (value > 5){
+            if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
+                value = 0;
+                ed_time = time.edit();
+                ed_time.clear();
+                ed_time.apply();
+
+            }
+            else {
+                finish();
+                Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
+            }
+
+        }
+
 
     }
 
@@ -119,20 +134,8 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
             }
         }
         else {
-            if (value > 5){
-                if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
-                    value = 0;
-                    ed_time = time.edit();
-                    ed_time.clear();
-                    ed_time.apply();
-
-                }
-                else {
-                    finish();
-                    Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
-                }
-
-            }
+            finish();
+            Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
         }
     }
 
