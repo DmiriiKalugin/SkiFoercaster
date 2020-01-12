@@ -83,11 +83,15 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         time_art = (int) current_time;
         time = getPreferences(MODE_PRIVATE);
 
+        if (value > 5){
+            if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
+                value = 0;
+                ed_time = time.edit();
+                ed_time.clear();
+                ed_time.apply();
 
-        System.out.println();
-        System.out.println();
-        System.out.println();
-
+            }
+        }
     }
 
     @Override
@@ -98,6 +102,8 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt(PREFERENCE_NAME, value);
         editor.apply();
+        System.out.println("Сохраненное значение " + time.getInt(PREFERENCE_TIME,0));
+        System.out.println("Текущее значение " + time_art);
 
 
         if (preferences.getInt(PREFERENCE_NAME, 0) < 5) {
@@ -119,20 +125,25 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
             }
         }
         else {
-            if (value > 5){
-                if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
-                    value = 0;
-                    ed_time = time.edit();
-                    ed_time.clear();
-                    ed_time.apply();
-
-                }
-                else {
-                    finish();
-                    Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
-                }
-
+            finish();
+            int times = time.getInt(PREFERENCE_TIME, 0)- time_art;
+            String hour;
+            if(times ==1){
+                hour = " час";
             }
+            else if(times >= 2 && times <= 4){
+                hour = " часа";
+            }
+            else if(times == 21){
+                hour = " час";
+            }
+            else if (times >= 22 && times <= 24){
+                hour = " часа";
+            }else{
+                hour = " часов";
+            }
+
+            Toast.makeText(this,  "Лимит запусков исчерпан, запуск возможен через " + times + hour, Toast.LENGTH_LONG).show();
         }
     }
 
