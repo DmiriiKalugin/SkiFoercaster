@@ -82,12 +82,10 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         current_time =  date.getTime()/1000/60/60 - 438000;
         time_art = (int) current_time;
         time = getPreferences(MODE_PRIVATE);
+        preferences = getPreferences(MODE_PRIVATE);
 
-        System.out.println(value);
-        System.out.println(time_art);
-        System.out.println(time.getInt(PREFERENCE_TIME, 0));
 
-        if (value > 5){
+        if (preferences.getInt(PREFERENCE_NAME, 0) >= 6){
             if ((time_art) >= time.getInt(PREFERENCE_TIME, 0)){
                 value = 0;
                 ed_time = time.edit();
@@ -97,7 +95,24 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
             }
             else {
                 finish();
-                Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
+                int times = time.getInt(PREFERENCE_TIME, 0)- time_art;
+                String hour;
+                if(times ==1){
+                    hour = " час";
+                }
+                else if(times >= 2 && times <= 4){
+                    hour = " часа";
+                }
+                else if(times == 21){
+                    hour = " час";
+                }
+                else if (times >= 22 && times <= 24){
+                    hour = " часа";
+                }else{
+                    hour = " часов";
+                }
+
+                Toast.makeText(this,  "Лимит запусков исчерпан, запуск возможен через " + times + hour, Toast.LENGTH_LONG).show();
             }
 
         }
@@ -109,33 +124,51 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
     public void onResume() {
         super.onResume();
 
-        preferences = getPreferences(MODE_PRIVATE);
+
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt(PREFERENCE_NAME, value);
         editor.apply();
 
+        ed_time = time.edit();
 
         if (preferences.getInt(PREFERENCE_NAME, 0) < 5) {
-            if (preferences.getInt(PREFERENCE_NAME, 0) == 4) {
-                ed_time = time.edit();
-                ed_time.clear();
-                ed_time.apply();
-
+            ed_time.clear();
+            ed_time.apply();
+            if (value == 4) {
                 run_more = "Это последний просмотр";
                 Toast.makeText(this, run_more, Toast.LENGTH_SHORT).show();
             }
             value++;
             if(value == 5){
-                ed_time = time.edit();
+
                 ed_time.putInt(PREFERENCE_TIME, time_art + 24);
                 ed_time.apply();
 
                 value++;
+                editor.putInt(PREFERENCE_NAME, value);
+                editor.apply();
             }
         }
         else {
             finish();
-            Toast.makeText(this,  "Лимит запусков исчерпан" , Toast.LENGTH_LONG).show();
+            int times = time.getInt(PREFERENCE_TIME, 0)- time_art;
+            String hour;
+            if(times ==1){
+                hour = " час";
+            }
+            else if(times >= 2 && times <= 4){
+                hour = " часа";
+            }
+            else if(times == 21){
+                hour = " час";
+            }
+            else if (times >= 22 && times <= 24){
+                hour = " часа";
+            }else{
+                hour = " часов";
+            }
+
+            Toast.makeText(this,  "Лимит запусков исчерпан, запуск возможен через " + times + hour, Toast.LENGTH_LONG).show();
         }
     }
 
