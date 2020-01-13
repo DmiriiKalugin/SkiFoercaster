@@ -133,11 +133,12 @@ public class   SkiForecaster extends AppCompatActivity  implements View.OnClickL
         ed_time = time.edit();
 
         if (preferences.getInt(PREFERENCE_NAME, 0) < 5) {
-            ed_time.clear();
-            ed_time.apply();
+
             if (value == 4) {
                 run_more = "Это последний просмотр";
                 Toast.makeText(this, run_more, Toast.LENGTH_SHORT).show();
+                ed_time.clear();
+                ed_time.apply();
             }
             value++;
             if(value == 5){

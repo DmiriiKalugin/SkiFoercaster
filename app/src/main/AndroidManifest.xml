@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_ski_forecaster"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".about.About"></activity>
+        <activity
+            android:name=".about.About"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity
             android:name=".condition.Arcificial"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
