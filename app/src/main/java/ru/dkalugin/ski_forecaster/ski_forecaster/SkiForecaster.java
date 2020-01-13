@@ -4,6 +4,7 @@ package ru.dkalugin.ski_forecaster.ski_forecaster;
 /**
  * Разработчик приложения
  * Калугин Дмитрий Игоревич
+ * 13.01.2020
  **/
 
 
